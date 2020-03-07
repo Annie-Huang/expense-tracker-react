@@ -3,6 +3,8 @@ https://github.com/bradtraversy/vanillawebprojects/tree/master/expense-tracker
 https://github.com/Annie-Huang/expense-tracker-react
 
 https://github.com/bradtraversy/vanillawebprojects/blob/master/expense-tracker/style.css
+https://github.com/bradtraversy/vanillawebprojects/blob/master/expense-tracker/script.js
+
 ================================================================================
 C:\react>npx create-react-app expense-tracker-react
 
