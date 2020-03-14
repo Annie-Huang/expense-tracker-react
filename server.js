@@ -7,9 +7,12 @@ const morgan = require('morgan'); // for logging.
 
 dotenv.config({path: './config/config.env'});
 
+const transctions = require('./routes/transactions');
+
 const app = express();
 
-app.get('/', (req, res) => res.send('Hello'));
+// app.get('/', (req, res) => res.send('Hello'));
+app.use('/api/v1/transactions', transctions);
 
 const PORT = process.env.PORT || 5000;
 
