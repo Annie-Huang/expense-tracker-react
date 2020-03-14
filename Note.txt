@@ -1,6 +1,10 @@
 https://www.youtube.com/watch?v=XuFDcZABiDQ (Build an Expense Tracker | React Hooks & Context API)
 https://github.com/bradtraversy/vanillawebprojects/tree/master/expense-tracker
+https://github.com/bradtraversy/expense-tracker-react
 https://github.com/Annie-Huang/expense-tracker-react
+
+Backend part (part II) is in https://github.com/bradtraversy/expense-tracker-mern
+My Part II will be under the expense-tracker-mern branch in https://github.com/Annie-Huang/expense-tracker-react
 
 https://github.com/bradtraversy/vanillawebprojects/blob/master/expense-tracker/style.css
 https://github.com/bradtraversy/vanillawebprojects/blob/master/expense-tracker/script.js
