@@ -13,3 +13,6 @@ https://github.com/bradtraversy/vanillawebprojects/blob/master/expense-tracker/s
 C:\react>npx create-react-app expense-tracker-react
 
 C:\react\expense-tracker-react>npm start
+
+
+C:\react\expense-tracker-react>npm init -y
