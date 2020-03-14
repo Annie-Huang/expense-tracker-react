@@ -19,6 +19,7 @@ C:\react\expense-tracker-react>npm init -y
 C:\react\expense-tracker-react>npm i express dotenv mongoose colors morgan
 C:\react\expense-tracker-react>npm i -D nodemon concurrently
 
+C:\react\expense-tracker-react>npm run server
 
 
 
