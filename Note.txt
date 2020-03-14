@@ -14,5 +14,6 @@ C:\react>npx create-react-app expense-tracker-react
 
 C:\react\expense-tracker-react>npm start
 
-
+Part II:
 C:\react\expense-tracker-react>npm init -y
+C:\react\expense-tracker-react>npm i express dotenv mongoose colors morgan
