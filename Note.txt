@@ -36,6 +36,14 @@ Server running in development mode on port 5000
 MongoDB Connected: annie-shard-00-00-yuauj.mongodb.net
 ------------------------------
 
+Sending a nothing as body in postman for POST will output the log in console:
+...
+Error [ValidationError]: Transaction validation failed: amount: Please add a positive or negative number, text: Please add some text
+    at ValidationError.inspect (C:\react\expense-tracker-react\node_modules\mongoose\lib\error\validation.js:61:24)
+...
+    text: MongooseError [ValidatorError]: Please add some text
+        at new ValidatorError (C:\react\expense-tracker-react\node_modules\mongoose\lib\error\validator.js:29:11)
+
 
 
 

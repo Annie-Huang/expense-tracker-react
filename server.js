@@ -14,6 +14,9 @@ const transctions = require('./routes/transactions');
 
 const app = express();
 
+// Allow use to use the body parser
+app.use(express.json());
+
 // app.get('/', (req, res) => res.send('Hello'));
 app.use('/api/v1/transactions', transctions);
 
