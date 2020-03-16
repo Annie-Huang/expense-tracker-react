@@ -4,8 +4,11 @@ const express = require('express');
 const dotenv = require('dotenv'); // to allow us to create global variable like port, db url
 const colors = require('colors'); // allow colors in console.
 const morgan = require('morgan'); // for logging.
+const connectDB = require('./config/db');
 
 dotenv.config({path: './config/config.env'});
+
+connectDB();
 
 const transctions = require('./routes/transactions');
 

@@ -21,6 +21,21 @@ C:\react\expense-tracker-react>npm i -D nodemon concurrently
 
 C:\react\expense-tracker-react>npm run server
 
+The MONGO_URI in config.env is from C:\react\MongoDBAtlasIII.docx
+mongodb+srv://annie:<password>@annie-yuauj.mongodb.net/test?retryWrites=true&w=majority
+Add password and change test to expensetracker
+
+You see this in the log:
+------------------------------
+[nodemon] 2.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Server running in development mode on port 5000
+MongoDB Connected: annie-shard-00-00-yuauj.mongodb.net
+------------------------------
+
 
 
 
