@@ -45,11 +45,28 @@ export const GlobalProvider = ({children}) => {
         }
     }
 
-    function deleteTransaction(id) {
-        dispatch({
-            type: 'DELETE_TRANSACTION',
-            payload: id
-        });
+    // function deleteTransaction(id) {
+    //     dispatch({
+    //         type: 'DELETE_TRANSACTION',
+    //         payload: id
+    //     });
+    // }
+    async function deleteTransaction(id) {
+        try {
+            // Because we have the proxy of http://localhost:5000 in client/package.json, you don't need to add it here.
+            await axios.delete(`/api/v1/transactions/${id}`);
+
+            dispatch({
+                type: 'DELETE_TRANSACTION',
+                payload: id
+            });
+
+        } catch (err) {
+            dispatch({
+                type: 'TRANSACTION_ERROR',
+                payload: err.response.data.error
+            });
+        }
     }
 
     function addTransaction(transaction) {
