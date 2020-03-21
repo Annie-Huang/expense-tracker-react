@@ -53,7 +53,6 @@ export const GlobalProvider = ({children}) => {
     // }
     async function deleteTransaction(id) {
         try {
-            // Because we have the proxy of http://localhost:5000 in client/package.json, you don't need to add it here.
             await axios.delete(`/api/v1/transactions/${id}`);
 
             dispatch({
@@ -69,11 +68,33 @@ export const GlobalProvider = ({children}) => {
         }
     }
 
-    function addTransaction(transaction) {
-        dispatch({
-            type: 'ADD_TRANSACTION',
-            payload: transaction
-        });
+    // function addTransaction(transaction) {
+    //     dispatch({
+    //         type: 'ADD_TRANSACTION',
+    //         payload: transaction
+    //     });
+    // }
+    async function addTransaction(transaction) {
+        const config = {
+            header: {
+                'Content-Type': 'application/json'
+            }
+        };
+
+        try {
+            const res = await axios.post('/api/v1/transactions', transaction, config);
+
+            dispatch({
+                type: 'ADD_TRANSACTION',
+                payload: res.data.data
+            });
+
+        } catch (err) {
+            dispatch({
+                type: 'TRANSACTION_ERROR',
+                payload: err.response.data.error
+            });
+        }
     }
 
     return (
