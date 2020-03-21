@@ -1,5 +1,7 @@
 // Common.js syntax:
 
+const path = require('path');
+
 const express = require('express');
 const dotenv = require('dotenv'); // to allow us to create global variable like port, db url
 const colors = require('colors'); // allow colors in console.
@@ -26,6 +28,14 @@ if(process.env.NODE_ENV === 'development') {
 
 // app.get('/', (req, res) => res.send('Hello'));
 app.use('/api/v1/transactions', transctions);
+
+// Make sure you do this part after you api route in line 30
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+
+    app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html')))
+}
+
 
 const PORT = process.env.PORT || 5000;
 
