@@ -46,4 +46,10 @@ Error [ValidationError]: Transaction validation failed: amount: Please add a pos
 
 
 
+In client/package.json
+  "proxy": "http://localhost:5000"
+The 5000 port is because the api is running at 5000 ("Server running in development mode on port 5000")
+After the proxy, you still access the react app through its normal port:
+http://localhost:3000/
+
 
