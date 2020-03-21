@@ -17,6 +17,13 @@ const app = express();
 // Allow use to use the body parser
 app.use(express.json());
 
+// When adding morgan, you will see this in terminal when a api is called.:
+//  GET /api/v1/transactions 304 2439.893 ms - -
+// It has the method, url, return code, time during info.
+if(process.env.NODE_ENV === 'development') {
+    app.use(morgan('dev'));
+}
+
 // app.get('/', (req, res) => res.send('Hello'));
 app.use('/api/v1/transactions', transctions);
 
