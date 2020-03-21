@@ -98,4 +98,9 @@ http://localhost:5000/api/v1/transactions/5e75b7a847750045a4d7083a
 
 ---------------
 
+Production build:
+C:\react\expense-tracker-react\client>npm run build
+Output build folder: C:\react\expense-tracker-react\client\build
+
+
 
