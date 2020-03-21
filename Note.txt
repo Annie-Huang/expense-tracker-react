@@ -53,3 +53,5 @@ After the proxy, you still access the react app through its normal port:
 http://localhost:3000/
 
 
+
+C:\react\expense-tracker-react\client>npm i axios
