@@ -55,3 +55,44 @@ http://localhost:3000/
 
 
 C:\react\expense-tracker-react\client>npm i axios
+
+---------------
+
+http://localhost:5000/api/v1/transactions
+GET
+response:
+{
+    "success": true,
+    "count": 2,
+    "data": [
+        {
+            "_id": "5e6f5f161442c24b38545143",
+            "text": "Payment",
+            "amount": 500,
+            "createdAt": "2020-03-16T11:12:22.232Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e75b76947750045a4d70839",
+            "text": "Book",
+            "amount": -50,
+            "createdAt": "2020-03-21T06:42:49.376Z",
+            "__v": 0
+        }
+    ]
+}
+
+http://localhost:5000/api/v1/transactions
+POST
+body:
+{
+	"text": "Camera",
+	"amount": -100
+}
+
+http://localhost:5000/api/v1/transactions/5e75b7a847750045a4d7083a
+:id : 5e75b7a847750045a4d7083a
+
+---------------
+
+
