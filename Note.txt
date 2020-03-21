@@ -10,7 +10,7 @@ https://github.com/bradtraversy/vanillawebprojects/blob/master/expense-tracker/s
 https://github.com/bradtraversy/vanillawebprojects/blob/master/expense-tracker/script.js
 
 https://reactjs.org/docs/hooks-rules.html
-
+https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript
 
 ================================================================================
 C:\react>npx create-react-app expense-tracker-react
